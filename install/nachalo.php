@@ -20,7 +20,7 @@ if(isset($_POST['host'])) $host=htmlspecialchars(strip_tags(trim($_POST['host'])
 /*Ну вот, загрузились, теперь нужно распаковать архив в эту директорию*/
 //И в процессе загрузки переместить архиватор
 		
-$upfile="kalinka.zip";
+$upfile="kalinka1.zip";
 
 		if($upfile)
 {
