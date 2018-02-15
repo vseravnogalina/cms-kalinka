@@ -35,7 +35,7 @@ $archive = new PclZip("$upfile");
   else echo "Архива-то нет!<br>";
 //АДМИНКА
 	/*Определяем директорию из которой ведется загрузка*/
-	$puttupadm="kalinka/office";
+	$puttupadm="kalinka1/office";
 	/*Определяем директорию, в которую ведется загрузка*/
 	mkdir("../office/");
 	$admfact="../office";
