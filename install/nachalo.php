@@ -20,7 +20,7 @@ if(isset($_POST['host'])) $host=htmlspecialchars(strip_tags(trim($_POST['host'])
 /*Ну вот, загрузились, теперь нужно распаковать архив в эту директорию*/
 //И в процессе загрузки переместить архиватор
 		
-$upfile="kalinka1.zip";
+$upfile="kalinka.zip";
 
 		if($upfile)
 {
@@ -35,7 +35,7 @@ $archive = new PclZip("$upfile");
   else echo "Архива-то нет!<br>";
 //АДМИНКА
 	/*Определяем директорию из которой ведется загрузка*/
-	$puttupadm="kalinka1/office";
+	$puttupadm="kalinka/office";
 	/*Определяем директорию, в которую ведется загрузка*/
 	mkdir("../office/");
 	$admfact="../office";
@@ -1147,7 +1147,7 @@ foreach($mdsh as $shmod) {
 	if (file_exists("../common"))
 	{rmdir("$puttup/common"); clearstatcache();}
 	/*Создаем директорию $admfact/book*/
-	/*mkdir("../book");*/
+	mkdir("../book");
 
 
 	//Папка images - СОЗДАТЬ ../images
@@ -1281,8 +1281,8 @@ mkdir("../template/simple/maket");
 //Копировать и удалять Файл $puttup/template/simple/maket/maket_simple.php
 if(copy("$puttup/template/simple/maket/maket_simple.php","../template/simple/maket/maket_simple.php"))
 unlink("$puttup/template/simple/maket/maket_simple.php");
-if(copy("$puttup/template/simple/maket/lazur1.jpg","../template/simple/maket/lazur1.jpg"))
-unlink("$puttup/template/simple/maket/lazur1.jpg");
+if(copy("$puttup/template/simple/maket/strawber.png","../template/simple/maket/strawber.png"))
+unlink("$puttup/template/simple/maket/strawber.png");
 //УДАЛИТЬ папку $puttup/template/simple/maket
 if (file_exists("../template/simple/maket"))
 	{

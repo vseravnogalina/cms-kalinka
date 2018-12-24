@@ -5,23 +5,23 @@
 //И ставим кнопку СТАРТ
 $tmb=(htmlspecialchars(trim($_POST['tmb'])));//Логин администратора сайта (полный доступ)
 
-if (unlink('nachalo.php'))//Начало
+if(unlink('nachalo.php'))//Начало
 echo "";
 else
 {echo "Ошибка при удалении файла";};
 
-if (unlink('poehaly.png'))//Поехали
+if(unlink('poehaly.png'))//Поехали
 echo "";
 else
 {echo "Ошибка при удалении файла";};
 
-if (unlink('instl.php'))//Инсталл
+if(unlink('instl.php'))//Инсталл
 echo "";
 else
 {echo "Ошибка при удалении файла";};
 
 //Старт
-if (unlink('start.php'))
+if(unlink('start.php'))
 {echo "<h2>0!&nbsp;&nbsp;&nbsp;</h2>";}
 else
 {echo "Ошибка при удалении файла";};
